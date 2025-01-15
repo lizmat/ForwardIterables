@@ -2,6 +2,9 @@ Revision history for ForwardIterables
 
 {{$NEXT}}
 
+0.0.3  2025-01-15T19:38:26+01:00
+    - Fix issue with subclassing and .push-all
+
 0.0.2  2025-01-15T19:20:32+01:00
     - Make class better subclassable for ReverseIterables
 

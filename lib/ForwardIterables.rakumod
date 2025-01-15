@@ -44,11 +44,10 @@ class ForwardIterables does Iterator {
         my $iterables := $!iterables;
         nqp::while(
           nqp::elems($iterables),
-          nqp::if(
-            nqp::istype((my $next := nqp::shift($iterables)),Iterator),
-            $next,
-            $next.iterator
-          ).push-all(target)
+          nqp::stmts(
+            self.next-iterator;
+            $!current.push-all(target)
+          )
         );
     }
 
