@@ -2,5 +2,8 @@ Revision history for ForwardIterables
 
 {{$NEXT}}
 
+0.0.2  2025-01-15T19:20:32+01:00
+    - Make class better subclassable for ReverseIterables
+
 0.0.1  2025-01-15T18:24:05+01:00
     - Initial version
