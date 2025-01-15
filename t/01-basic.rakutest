@@ -1,0 +1,26 @@
+use Test;
+
+use ForwardIterables;
+
+plan 7;
+
+my $iterator = ForwardIterables.new;
+is $iterator.pull-one, IterationEnd, 'no iterables';
+
+my @a = ^5;
+$iterator = ForwardIterables.new(@a, @a);
+is-deeply $iterator.pull-one, 0, 'do we get a good first value';
+my @b;
+@b.push($iterator.pull-one) for ^9;
+is-deeply @b, [1,2,3,4,0,1,2,3,4], 'did we get all values?';
+is $iterator.pull-one, IterationEnd, 'at the end now';
+
+is ForwardIterables.new(@a, @a).push-all(my @c),
+  IterationEnd,
+  'did push-all return IterationEnd';
+is-deeply @c, [0,1,2,3,4,0,1,2,3,4], 'did push-all work';
+
+my @d = ForwardIterables.new(@a, @a).Seq;
+is-deeply @d, [0,1,2,3,4,0,1,2,3,4], 'did we get all values with .Seq?';
+
+# vim: expandtab shiftwidth=4
