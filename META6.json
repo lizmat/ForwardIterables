@@ -3,15 +3,20 @@
   "authors": [
     "Elizabeth Mattijsen"
   ],
+  "build-depends": [
+  ],
   "depends": [
   ],
-  "description": "turn two or more Iterables into a single iterator",
+  "description": "Turn two or more Iterables into a single iterator",
   "license": "Artistic-2.0",
   "name": "ForwardIterables",
   "provides": {
     "ForwardIterables": "lib/ForwardIterables.rakumod"
   },
   "raku": "6.d",
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/ForwardIterables.git",
   "support": {
     "bugtracker": "https://github.com/lizmat/ForwardIterables/issues",
     "source": "https://github.com/lizmat/ForwardIterables.git"
@@ -19,6 +24,8 @@
   "tags": [
     "ITERABLE",
     "NAUGHTY"
+  ],
+  "test-depends": [
   ],
   "version": "0.0.4"
 }

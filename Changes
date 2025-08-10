@@ -1,7 +1,9 @@
 Revision history for ForwardIterables
 
 {{$NEXT}}
-    - Fix doc generation issue
+
+0.0.4  2025-08-10T10:37:54+02:00
+    - Fix doc generation issue and source URL link
 
 0.0.3  2025-01-15T19:38:26+01:00
     - Fix issue with subclassing and .push-all
