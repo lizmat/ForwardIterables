@@ -24,7 +24,7 @@ The `ForwardIterables` distribution provides a `ForwardIterables` class that cre
 
 This functionality is similar to the [`flat`](https://docs.raku.org/routine/flat) method, but with the important distinction that it does **NOT** look at the containerization of the arguments. So any iterable such as a `Array` or `List` inside a `Hash` or an `Array`, **will** produce all of its values.
 
-And it also does **not** recurse into any `Iterable` values that it encounters, so in that aspect it is **NOT** like `flat` at all.
+And it also does **not** recurse into any `Iterable` values that it encounters, so in that respect it is **NOT** like `flat` at all.
 
 It also provides a `Seq` method, to directly produce a `Seq` object from the iterator, so it can be used in expressions.
 
@@ -43,7 +43,7 @@ AUTHOR
 
 Elizabeth Mattijsen <liz@raku.rocks>
 
-Source can be located at: https://github.com/lizmat/OneSeq . Comments and Pull Requests are welcome.
+Source can be located at: https://github.com/lizmat/ForwardIterables . Comments and Pull Requests are welcome.
 
 If you like this module, or what I'm doing more generally, committing to a [small sponsorship](https://github.com/sponsors/lizmat/) would mean a great deal to me!
 
